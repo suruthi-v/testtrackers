@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="secont.css">
+</head>
+<body>
+    <div class="form">
+    <form method="post">
+          <input type="text" id="name" placeholder="Name" name="name" required>
+      <input type="text" id="phone" placeholder="Phone" name="phone" required>
+      <input type="email" id="email" placeholder="Email" name="email" required>
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+    </div>
+ 
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        console.log('hi');
+
+    })
+</script>
+</html>
